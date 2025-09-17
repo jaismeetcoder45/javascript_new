@@ -30,8 +30,48 @@ false => 0
 "jaismeet" => true
 */
 
-let someNum = 33
+// let someNum = 33
 
-let stringNum = String(someNum)
-console.log(stringNum)
-console.log(typeof stringNum)
+// let stringNum = String(someNum)
+// console.log(stringNum)
+// console.log(typeof stringNum)
+
+// ********************Operations*********************
+
+// let value = 3;
+// let negvalue = -value;
+// console.log(negvalue);
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**2)
+// console.log(2**3)
+// console.log(2/3)
+// console.log(2%3)
+
+// let str1 = "Jaismeet"
+// let str2 = " Rajveer"
+// let str3 = str1 + str2
+// console.log(str3)
+
+// console.log("1" + 2 + 2)
+// console.log(1 + 2 + "2")
+// console.log(1 + "2")
+// console.log("1" + "2")
+
+// console.log(true)
+// console.log(+true)
+// console.log(+"")//no sense to use this
+
+// let num1, num2, num3
+
+// num1 = num2 = num3 = 2+2
+
+let gamecounter = 100
+gamecounter++;
+console.log(gamecounter)
+++gamecounter;
+console.log(gamecounter)
+
+// read about prefix and postfix operator 
