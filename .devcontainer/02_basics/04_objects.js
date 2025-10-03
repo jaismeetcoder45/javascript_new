@@ -50,12 +50,45 @@ const users = [
     }
 ]
 users[1].email
-console.log(A);
+// console.log(A);
 
-console.log(Object.keys(A));
-console.log(Object.values(A));
-console.log(Object.entries(A));//rarely used
+// console.log(Object.keys(A));
+// console.log(Object.values(A));
+// console.log(Object.entries(A));//rarely used
 
-console.log(A.hasOwnProperty('name'));
-console.log(A.hasOwnProperty('email'));
+// console.log(A.hasOwnProperty('name'));
+// console.log(A.hasOwnProperty('email'));
 
+
+const course = {
+    name: "jsInHindi",
+    price: "99",
+    teacher: "Hitesh sir"
+}
+// course.name 
+
+// const {teacher} = course//to access value of teacher in object course
+const {teacher: sir} = course//to short the name value of teacher in object course
+console.log(sir);
+console.log(typeof course);
+
+
+// const navbar = ({/* curly braces means destructuring */}) => {
+// this concept is in react 
+// }
+// navbar(comapny = "Jaismeet")
+
+//API - putting your work on someone else
+//JSON representation:-
+// {
+//     "name": "jaismeet",
+//     "CName": "js",
+//     "price": "free"
+// }
+
+//API in array format:-
+// [
+//     {},
+//     {},
+//     {}
+// ]
