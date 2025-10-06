@@ -35,6 +35,34 @@ function loginUserMessage(username = "Adam"/* pre defined  */){
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage("Jaismeet"));
+// console.log(loginUserMessage("Jaismeet"));
 // console.log(loginUserMessage(""));
-console.log(loginUserMessage());//undefined
+// console.log(loginUserMessage());//undefined
+
+/*******************Day2 of Functions********************* */
+
+function calculateCartPrice(val1, val2, ...num1){//...is also a rest operator which takes a number of arguments as array
+    return num1;
+}
+console.log(calculateCartPrice(200,400,500,800))
+
+const user ={
+    username: "Jais",
+    price: 199
+}
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);   
+}
+// handleObject(user)
+handleObject({
+    username: "Sam",
+    price: 399
+})
+
+const myNewArray = [200,400,700,900]
+
+function returnSecondValue(array){
+    return array[1];
+}
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,600,800,700]));
