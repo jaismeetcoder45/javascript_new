@@ -10,6 +10,7 @@
 
 //first () for defination, second() for execution
 
+// (() => {}) this is the method
 ((name) => {
     console.log(`DB CONNECTED TWO ${name}`);
 })('Jais')
