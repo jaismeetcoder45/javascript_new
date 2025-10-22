@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    // div.id = "myId"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor = "yellow"
+    div.style.padding = "12px"
+    div.innerText = "Harry Potter"
+    const addText = document.createTextNode(" is the best sorcerer in the world")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+</html>
+<!-- see al this in console in inspect  -->
