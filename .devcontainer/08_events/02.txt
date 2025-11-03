@@ -1,0 +1,19 @@
+Javascript :- 
+    is a synchoronous 
+    is a single threaded
+    (IT IS DEFAULT)
+Execution context:-
+    1. execute one line of code at a time
+    (each operations wait for the last one to complete for its own execution)
+
+Blocking vs non blocking code:-
+    blocking - block the flow of program 
+               read file sync
+    non blocking - dont block execution
+                   read file async
+
+JS engine is composed of memory heap and call stack, web API, task queue
+
+    in call stack first goes global then function memory stack
+
+/****watch async javascript fundamentals of chai aur code for this****/
