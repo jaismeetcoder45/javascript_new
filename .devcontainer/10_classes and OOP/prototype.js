@@ -62,3 +62,5 @@ String.prototype.trueLength = function(){
 anotherUsername.trueLength()
 // jais.trueLength()
 myName.trueLength()
+
+// this works with global execution object
