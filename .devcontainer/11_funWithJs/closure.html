@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozella"
+
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+
+    //     displayName();
+    // }
+    // init();
+
+// LEXICAL SCOPE
+
+// function outer(){
+//     let username = "Jais"
+//     console.log("outer:",username);
+//     function inner(){
+//         let secret = "My123"
+//         console.log("inner:",username);
+//     }
+//     function inner2(){
+//         console.log("inner2:",username);
+//         console.log(secret);
+        
+//     }
+//     inner();
+//     inner2();
+// }
+// outer();
+// console.log("Too outer",username);
+// here variables are shared by a perent function to child function 
+//  but two child functions in the same parent function can not access each other's variables
+// also child cannot give anything to parent function
+
+//CLOSURE
+function makeFunc(){
+    const name = "Mozilla";
+    function displayName(){
+        console.log(name);
+    }
+    return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+// if we try to run the inner function then the outer function will get called as well
+// outer function scope is lexical scope for inner function
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`;
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`;
+    // }
+    function clickHandler(color){
+
+        // document.body.style.backgroundColor = `${color}`;
+        return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+
+    }
+    document.getElementById(`orange`).onclick = clickHandler("orange")
+    document.getElementById(`green`).onclick = clickHandler("green")
+</script>
+</html>
